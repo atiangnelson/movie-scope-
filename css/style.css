@@ -109,7 +109,7 @@ backdrop-filter: blur(70px);
 }
 
 #infobar{
-    min-height: 50vh;
+    min-height: 30vh;
     display: flex;
     justify-content: space-between;
     
@@ -128,15 +128,22 @@ h3{
     background: none;
 }
 img{
-    height: 20cm;
-    width: 20cm;
+    height: 10cm;
+    width: 10cm;
     border-radius: 50px;
 
 }
 img:hover{
     filter: blur(5px);
 }
-
+p{
+    color: rgb(236, 227, 227);
+    background: none;
+    text-indent: 10%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
 
 
 
