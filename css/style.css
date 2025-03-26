@@ -125,11 +125,19 @@ h3{
     display: flex;
     font-size: 30px;
     margin-left: 300px;
+    background: none;
 }
 img{
     height: 20cm;
     width: 20cm;
+    border-radius: 50px;
+
 }
+img:hover{
+    filter: blur(5px);
+}
+
+
 
 
 
