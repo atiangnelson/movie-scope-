@@ -155,6 +155,15 @@ p{
 #end{
     margin-top: 20px;
 }
+#keywords{
+    justify-content: space-around;
+    backdrop-filter: blur(25px);
+    background-blend-mode: color-burn;
+}
+h4{
+    color: whitesmoke;
+    text-align: center;
+}
 
 
 

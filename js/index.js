@@ -21,6 +21,12 @@ function displayMovieInfo(movies) {
         detail.textContent=movie.synopsis
         const keyword=document.getElementById("keywords")
         keyword.textContent=movie.keywords
+        const type=document.getElementById("genres")
+        type.textContent=movie.genres
+        const availability=document.getElementById("stream")
+        availability.textContent=movie.streaming
+        const year=document.getElementById("year")
+        year.textContent=movie.year
 
     });
 }
