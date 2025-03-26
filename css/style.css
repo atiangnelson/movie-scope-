@@ -35,7 +35,7 @@
     color: white;
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: normal;
     font-style: normal;
 }
 #search{
@@ -59,7 +59,7 @@
     background: gray;
         font-family: "Cinzel", serif;
         font-optical-sizing: auto;
-        font-weight: <weight>;
+        font-weight: normal;
         font-style: normal;
 }
 
@@ -110,5 +110,26 @@ backdrop-filter: blur(70px);
 
 #infobar{
     min-height: 50vh;
-    background-image: url(../assets/The\ Se7enth\ Art.jpeg);
+    display: flex;
+    justify-content: space-between;
+    
 }
+h3{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: grey;
+    justify-content: stretch;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    margin-left: 300px;
+}
+img{
+    height: 20cm;
+    width: 20cm;
+}
+
+
+
