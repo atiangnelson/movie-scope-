@@ -1,0 +1,114 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-image: url(../assets/Free\ Disney\ Plus\ Account\ Generator.jpeg);
+    
+    
+    
+}
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1cm; 
+    background: gray;
+    width: 60cm;
+    border-radius: 25px;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+#search{
+   height: 2cm;
+    background: none;
+    width: 60cm;
+    border-radius: 25px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 2% 50% 2% 35%;
+    min-height: 10vh;
+    
+    
+    
+    
+}
+#btn{
+    color:white;
+    border-radius: 24px;
+    background: gray;
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+}
+
+
+
+
+
+::placeholder{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+}
+#navbar{
+    display: flex;
+    background: none;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+
+}
+.tag{
+    text-decoration: none;
+    display: flex;
+    background: none;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        border-width:2px;
+border-style: solid;
+width: fit-content;
+padding: 16px;
+border-radius: 25px;
+backdrop-filter: blur(70px);
+
+
+}
+
+.tag:hover{
+    color:grey;
+    transition:all 2s ease-in-out;
+    border-radius: 60px;
+}
+
+#infobar{
+    min-height: 50vh;
+    background-image: url(../assets/The\ Se7enth\ Art.jpeg);
+}

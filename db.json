@@ -1,0 +1,23 @@
+
+  {
+    "movies":[
+    {  
+    "id":1,
+    "title": "Inception",
+    "year": 2010,
+    "genres": ["Action", "Sci-Fi", "Thriller"],
+    "ratings": {
+      "IMDb": 8.8,
+      "Rotten Tomatoes": "87%",
+      "Metacritic": 74
+    },
+    "synopsis": "A thief who enters the dreams of others to steal secrets is given a chance to have his past crimes forgiven, if he can plant an idea into someone's subconscious.",
+    "keywords": ["dream", "subconscious", "heist", "mind-bending"],
+    "image": "https://example.com/inception.jpg",
+    "availability": {
+      "streaming": ["Netflix", "Amazon Prime"]
+    }
+}
+  ]
+
+}
