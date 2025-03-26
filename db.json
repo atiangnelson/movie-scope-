@@ -9,9 +9,21 @@
     "synopsis": "Christopher Nolan’s *Inception* (2010) is a sci-fi thriller that explores the power of dreams and the subconscious. Dom Cobb (Leonardo DiCaprio) is a skilled thief who extracts secrets from people’s minds by entering their dreams. Given a chance to erase his criminal past, he must do the impossible—plant an idea instead of stealing one. As Cobb and his team navigate dangerous, multi-layered dreamscapes, his past trauma threatens to unravel their mission. With stunning visuals, a gripping story, and a thought-provoking ending, *Inception* blurs the line between dreams and reality, leaving audiences questioning what’s real and what’s merely perception.",
     "keywords": ["dream", "subconscious", "heist"],
     "image": "https://i.pinimg.com/736x/ad/0a/e6/ad0ae638b250f15bd3d922528cf82026.jpg",
-      "streaming": ["Netflix","","Amazon Prime"]
+      "streaming": ["Netflix","","Amazon Prime"],
+      "trailer":"https://www.youtube.com/watch?v=YoHD9XEInc0&pp=ygURaW5jZXB0aW9uIHRyYWlsZXI%3D"
     
-}
-  ]
+},
+{
 
+  "id":2,
+  "title": "Moana",
+  "year": 2016,
+  "genre": ["Animation", "Adventure", "Comedy"],
+  "synopsis": "Moana, the adventurous daughter of a Polynesian chief, is chosen by the ocean to restore the heart of Te Fiti, a goddess whose stolen heart has caused environmental devastation. Defying her father’s wishes, she sets sail across the ocean and seeks the help of the demigod Maui. Together, they face fierce monsters, treacherous waters, and Maui’s own insecurities. Along the way, Moana discovers her true strength and identity, proving that she is destined to lead her people. With stunning animation, heartfelt storytelling, and unforgettable music, Moana’s journey is one of courage, self-discovery, and embracing one's destiny.",
+  "keywords": ["ocean adventure", "self-discovery", "Polynesian culture", "mythology", "demigod", "friendship", "heroic journey", "island life", "family", "empowerment"],
+  "image": "https://i.pinimg.com/736x/d8/c8/5f/d8c85fbf3ac1a0e3977d4b4365f37217.jpg",
+  "trailer": "https://www.youtube.com/watch?v=LKFuXETZUsI"
 }
+]
+  }
+

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded",fetchMovies)
 
 let url="http://localhost:3000/movies"
-document.addEventListener("DOMContentLoaded",fetchMovies)
+
 function fetchMovies (){
 fetch(url)
 .then(res=>res.json())
@@ -9,10 +9,11 @@ fetch(url)
     displayMovieInfo(info)
     displayMoviePoster(info)
 })
-.catch(console.log("Error fetching movies"))
+.catch(console.log("Error fetching movies",error))
 
 }
 function displayMovieInfo(movies) {
+     information.innerHTML=''
     movies.forEach((movie) => {
         const information=document.getElementById("title")
         information.innerHTML=''
@@ -27,6 +28,8 @@ function displayMovieInfo(movies) {
         availability.textContent=movie.streaming
         const year=document.getElementById("year")
         year.textContent=movie.year
+        const trailer=document.getElementById("tube")
+        trailer.src=movie.trailer
 
     });
 }
@@ -38,3 +41,4 @@ function displayMovieInfo(movies) {
      Image.alt=movie.title
  })
  }
+
