@@ -19,6 +19,8 @@ function displayMovieInfo(movies) {
         information.textContent=movie.title
         const detail=document.getElementById("movieinfo")
         detail.textContent=movie.synopsis
+        const keyword=document.getElementById("keywords")
+        keyword.textContent=movie.keywords
 
     });
 }
