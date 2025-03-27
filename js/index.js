@@ -85,8 +85,19 @@ function displayMovieInfo(movies) {
     .catch(error => console.log("Error updating rating:", error));
 
 }
-function deleteMovie(movieId)
+function deleteMovie(movieId){
 fetch(url,{
     method: "DELETE",
 
 })
+.then((res) => {
+    if (!res.ok) {
+        throw new Error("Failed to delete movie");
+    }
+    return res.json();
+})
+.then(() => {
+    fetchMovies(); 
+})
+.catch(error => console.log("Error deleting movie:", error));
+}
