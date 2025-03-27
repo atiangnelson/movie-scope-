@@ -32,18 +32,21 @@ function displayMovieInfo(movies) {
 <input type="number" class="rate-input"  placeholder="Rate (0-10)" min="0" max="10">
 <button class="submit-rating" >Submit</button> `
         infobox.appendChild(moviecard)
+        document.querySelectorAll(".submit-rating").forEach((button) => {
+            button.addEventListener("click", (event) => {
+                const movieId = event.target.getAttribute("data-id");
+                const newRating = document.querySelector(`.rate-input[data-id='${movieId}']`).value;
+                updateMovieRating(movieId,newRating);
+            });
+        });
+
         
     }  
     )
     };
     
-    document.querySelectorAll(".submit-rating").forEach((button) => {
-        button.addEventListener("click", (event) => {
-            const newRating = document.querySelector(`.rate-input`).value;
-            updateMovieRating(newRating);
-        });
-    });
-    function updateMovieRating(newRating){
+    
+    function updateMovieRating( movieId,newRating){
         if(newRating < 0||newRating > 10 || newRating===""){
             alert("please enter a valid input")
 
@@ -58,4 +61,15 @@ function displayMovieInfo(movies) {
         
 
     })
-    .then()
+    .then((res) => {
+        if (!res.ok) {
+            throw new Error("Failed to update rating");
+        }
+        return res.json();
+    })
+    .then((updatedMovie) => {
+        
+        document.getElementById(`rating`).textContent = updatedMovie.rating; 
+    })
+    .catch(error => console.log("Error updating rating:", error));
+
