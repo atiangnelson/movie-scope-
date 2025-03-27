@@ -35,3 +35,4 @@ function displayMovieInfo(movies) {
     }  
     )
     };
+    
