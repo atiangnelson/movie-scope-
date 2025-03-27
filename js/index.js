@@ -28,17 +28,28 @@ function displayMovieInfo(movies) {
                 <p>${movie.genres}</p>
                 <p>${movie.streaming}</p>
                 <h4>${movie.year}</h4>
-                <h4 id="rating" >${movie.rating}</h4>
-<input type="number" class="rate-input"  placeholder="Rate (0-10)" min="0" max="10">
-<button class="submit-rating" >Submit</button> `
+                
+<input type="number" class="rate-input" data-id="${movie.id}" placeholder="Rate (0-10)" min="0" max="10">
+<button  data-id="${movie.id}" class="submit-rating" >Submit</button> 
+ <button class="delete-movie" data-id="${movie.id}">Delete</button>
+`
         infobox.appendChild(moviecard)
-        document.querySelectorAll(".submit-rating").forEach((button) => {
+        
+            });
+            document.querySelectorAll(".submit-rating").forEach((button) => {
+                button.addEventListener("click", (event) => {
+                    const movieId = event.target.getAttribute("data-id");
+                    const newRating = document.querySelector(`.rate-input[data-id='${movieId}']`).value;
+                    updateMovieRating(movieId,newRating)
+        });
+
+        document.querySelectorAll(".delete-movie").forEach((button) => {
             button.addEventListener("click", (event) => {
                 const movieId = event.target.getAttribute("data-id");
-                const newRating = document.querySelector(`.rate-input[data-id='${movieId}']`).value;
-                updateMovieRating(movieId,newRating);
+                deleteMovie(movieId);
             });
         });
+
 
         
     }  
@@ -51,8 +62,8 @@ function displayMovieInfo(movies) {
             alert("please enter a valid input")
 
         }
-    }
-    fetch(url ,{
+    
+    fetch(url,{
         method: "PATCH",
         headers:{
             "Content-Type": "application/json"
@@ -73,3 +84,4 @@ function displayMovieInfo(movies) {
     })
     .catch(error => console.log("Error updating rating:", error));
 
+}
