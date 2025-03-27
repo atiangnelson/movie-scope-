@@ -9,14 +9,16 @@ fetch(url)
     displayMovieInfo(info)
     displayMoviePoster(info)
 })
-.catch(console.log("Error fetching movies",error))
+.catch(error=>console.log("Error fetching movies:",error))
 
 }
 function displayMovieInfo(movies) {
-     information.innerHTML=''
+    
+    
     movies.forEach((movie) => {
+        
+        const infobox=document.getElementById("infobar")
         const information=document.getElementById("title")
-        information.innerHTML=''
         information.textContent=movie.title
         const detail=document.getElementById("movieinfo")
         detail.textContent=movie.synopsis
@@ -28,17 +30,21 @@ function displayMovieInfo(movies) {
         availability.textContent=movie.streaming
         const year=document.getElementById("year")
         year.textContent=movie.year
-        const trailer=document.getElementById("tube")
-        trailer.src=movie.trailer
+        infobox.appendChild(information)
+        infobox.appendChild(detail)
+        infobox.appendChild(keyword)
+        infobox.appendChild(type)
+        infobox.appendChild(availability)
+        infobox.appendChild(year)
 
-    });
-}
+    }  
+    )
+    };
+
  function displayMoviePoster(posters){
  posters.forEach((movie)=>{
      const image=document.getElementById("movieimg")
-     image.innerHTML=''
      image.src=movie.image
-     Image.alt=movie.title
+     image.alt=movie.title
  })
  }
-

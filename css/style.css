@@ -114,7 +114,8 @@ backdrop-filter: blur(70px);
     min-height: 30vh;
     display: flex;
     justify-content: space-between;
-    backdrop-filter: blur(25px);
+    flex-direction: column;
+
     
 }
 h3{
@@ -134,6 +135,10 @@ img{
     height: 10cm;
     width: 10cm;
     border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 40%;
 
 }
 img:hover{
@@ -142,11 +147,9 @@ img:hover{
 p{
     color: rgb(237, 238, 241);
     background: none;
-    text-indent: 10%;
     text-align: center;
     justify-content: center;
     display: flex; 
-    backdrop-filter: blur(25px);
         font-family: "Julius Sans One", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -157,7 +160,6 @@ p{
 }
 #keywords{
     justify-content: space-around;
-    backdrop-filter: blur(25px);
     background-blend-mode: color-burn;
 }
 h4{
