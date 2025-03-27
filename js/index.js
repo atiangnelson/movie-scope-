@@ -28,11 +28,34 @@ function displayMovieInfo(movies) {
                 <p>${movie.genres}</p>
                 <p>${movie.streaming}</p>
                 <h4>${movie.year}</h4>
-                
-                `
+                <h4 id="rating" >${movie.rating}</h4>
+<input type="number" class="rate-input"  placeholder="Rate (0-10)" min="0" max="10">
+<button class="submit-rating" >Submit</button> `
         infobox.appendChild(moviecard)
         
     }  
     )
     };
     
+    document.querySelectorAll(".submit-rating").forEach((button) => {
+        button.addEventListener("click", (event) => {
+            const newRating = document.querySelector(`.rate-input`).value;
+            updateMovieRating(newRating);
+        });
+    });
+    function updateMovieRating(newRating){
+        if(newRating < 0||newRating > 10 || newRating===""){
+            alert("please enter a valid input")
+
+        }
+    }
+    fetch(url ,{
+        method: "PATCH",
+        headers:{
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({rating:newRating})
+        
+
+    })
+    .then()
