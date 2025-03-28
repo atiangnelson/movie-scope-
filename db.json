@@ -4,7 +4,7 @@
       "id": "2",
       "title": "Moana",
       "year": 2016,
-      "genre": "Animation",
+      "genres": "Animation",
       "synopsis": "Moana, the adventurous daughter of a Polynesian chief, is chosen by the ocean to restore the heart of Te Fiti, a goddess whose stolen heart has caused environmental devastation. Defying her father’s wishes, she sets sail across the ocean and seeks the help of the demigod Maui. Together, they face fierce monsters, treacherous waters, and Maui’s own insecurities. Along the way, Moana discovers her true strength and identity, proving that she is destined to lead her people. With stunning animation, heartfelt storytelling, and unforgettable music, Moana’s journey is one of courage, self-discovery, and embracing one's destiny.",
       "keywords": [
         "ocean adventure",
@@ -37,6 +37,17 @@
       "year": 2024,
       "image": "https://i.pinimg.com/736x/b2/fe/14/b2fe14bfeab1a03acbc8c1a1e7478162.jpg",
       "trailer": "https://www.youtube.com/watch?v=0dclNQV71-k&pp=ygUXYmVhdXR5IGluIGJsYWNrIHRyYWlsZXI%3D"
+    },
+    {
+      "id":"4",
+      "title": "Prison Break",
+      "year": 2005,
+      "genres": ["Action", "Crime", "Drama", "Thriller"],
+      "streaming": ["Hulu", "Disney+", "Amazon Prime"],
+      "keywords": ["escape", "prison", "conspiracy", "brotherhood", "fugitive"],
+      "trailer": "https://www.youtube.com/watch?v=AL9zLctDJaU&pp=ygUUcHJpc29uIGJyZWFrIHRyYWlsZXLSBwkJvwCDtaTen9Q%3D",
+      "image": "https://i.pinimg.com/736x/b6/9a/f7/b69af7e33fd92a53deaa8445897fde92.jpg"
     }
+  
   ]
 }
