@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded",fetchMovies)
 
-let url="http://localhost:3000/movies"
+let url="https://movie-scope-1i6l.vercel.app/movies"
 
 function fetchMovies (){
 
@@ -29,7 +29,6 @@ function displayMovieInfo(movies) {
                 <p>${movie.streaming}</p>
                 <h4>${movie.year}</h4>
                 <span id="rating-${movie.id}">${movie.rating}</span></p>
-
 <input type="number" class="rate-input" data-id="${movie.id}" placeholder="Rate (0-10)" min="0" max="10">
 <button  data-id="${movie.id}" class="submit-rating" >Submit</button> 
  <button class="delete-movie" data-id="${movie.id}">Delete</button>
