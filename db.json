@@ -42,9 +42,26 @@
       "id":"4",
       "title": "Prison Break",
       "year": 2005,
-      "genres": ["Action", "Crime", "Drama", "Thriller"],
-      "streaming": ["Hulu", "Disney+", "Amazon Prime"],
-      "keywords": ["escape", "prison", "conspiracy", "brotherhood", "fugitive"],
+      "synopsis": "In *Prison Break: The Final Break*, Sara is imprisoned, and Michael plans one last escape to save her. With Lincoln, Sucre, and Mahone’s help, he infiltrates the prison, but corrupt officials plot against them. In a heartbreaking twist, Michael sacrifices himself so Sara and their unborn child can escape. His death is later revealed through a farewell video, providing a tragic yet heroic end to his story.",
+      "keywords":
+       ["escape",
+        "prison",
+         "conspiracy", 
+         "brotherhood", 
+         "fugitive"
+        ],
+      "genres": 
+      ["Action", 
+      "Crime",
+       "Drama", 
+       "Thriller"
+      ],
+      "streaming": 
+      ["Hulu",
+       "Disney+", 
+       "Amazon Prime"
+      ],
+      
       "trailer": "https://www.youtube.com/watch?v=AL9zLctDJaU&pp=ygUUcHJpc29uIGJyZWFrIHRyYWlsZXLSBwkJvwCDtaTen9Q%3D",
       "image": "https://i.pinimg.com/736x/b6/9a/f7/b69af7e33fd92a53deaa8445897fde92.jpg"
     }
