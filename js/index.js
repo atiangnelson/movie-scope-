@@ -28,7 +28,8 @@ function displayMovieInfo(movies) {
                 <p>${movie.genres}</p>
                 <p>${movie.streaming}</p>
                 <h4>${movie.year}</h4>
-                
+                <span id="rating-${movie.id}">${movie.rating}</span></p>
+
 <input type="number" class="rate-input" data-id="${movie.id}" placeholder="Rate (0-10)" min="0" max="10">
 <button  data-id="${movie.id}" class="submit-rating" >Submit</button> 
  <button class="delete-movie" data-id="${movie.id}">Delete</button>
@@ -63,7 +64,7 @@ function displayMovieInfo(movies) {
 
         }
     
-    fetch(url,{
+    fetch(`${url}/${movieId}`,{
         method: "PATCH",
         headers:{
             "Content-Type": "application/json"
@@ -86,7 +87,7 @@ function displayMovieInfo(movies) {
 
 }
 function deleteMovie(movieId){
-fetch(url,{
+fetch(`${url}/${movieId}`,{
     method: "DELETE",
 
 })
